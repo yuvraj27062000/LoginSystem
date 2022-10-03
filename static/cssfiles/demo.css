@@ -1,0 +1,25 @@
+.content{
+    min-height: 500px;
+    border-color: black;
+}
+.navbar{
+    background-attachment: fixed;
+}
+.footer{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar{
+    display: flex;
+    /* justify-content: center; */
+    
+
+}
+ul{
+    list-style: none;
+}
+
+.navbar-light {
+    justify-content: space-between;
+}

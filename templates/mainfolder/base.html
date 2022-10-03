@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title> 
+        <link rel="stylesheet" href="{% static './cssfiles/demo.css'%}"> 
+        <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+        crossorigin="anonymous">
+      
+    </head>
+  <body class="boss">
+	
+    <div class="wrapper">
+
+      <header class="header">
+        
+          <h1><a href="#">Exam Portal</a></h1>
+        
+      </header>
+      <nav class="navbar navbar-light bg-light">
+     <div>
+        <ul>
+          <li><a class="active" href="\">Home</a>
+          <a href="\python">PythonExam</a>
+          <a href="\java">JavaExam</a>
+          <a href="\aptitute">AptituteExam</a>
+          <a href="\signup">Signup</a>
+          <a href="\accounts\login">Login</a>
+          <a href="\accounts\logout">Logout</a></li>
+        </ul>
+    </div>
+      
+      </nav>
+      <div class="container">
+  
+        {% block body_block %}
+
+        {% endblock %}
+      <footer  class="footer">Be Cool &copy; 2020</footer>
+      </div>  
+  </body>
+</html>
